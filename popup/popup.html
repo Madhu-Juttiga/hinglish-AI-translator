@@ -17,14 +17,16 @@
       </div>
     </div>
 
+    <!-- API Key Setup Section -->
     <div class="api-key-container" id="apiKeyContainer" style="display: none;">
       <div class="input-group">
         <input type="password" id="apiKey" placeholder="Enter your Groq API key">
-        <button id="toggleApiKey" class="icon-button">👁️</button>
+        <button id="toggleApiKey" class="icon-button"></button>
       </div>
       <button id="saveApiKey" class="button primary">Save API Key</button>
     </div>
 
+    <!-- Translation Settings -->
     <div class="settings-section">
       <h2>Translation Settings</h2>
       <div class="setting-group">
@@ -48,6 +50,21 @@
       <button id="saveSettings" class="button primary">Save Settings</button>
     </div>
 
+    <!-- 🆕 Live Translation Preview -->
+    <div class="live-preview">
+      <h2>Live Translation Preview</h2>
+      <textarea id="liveInput" placeholder="Type or paste text here..." rows="4"></textarea>
+      <button id="liveTranslateBtn" class="button">Translate Now</button>
+      <div class="result-box">
+        <strong>Translated Hinglish:</strong>
+        <p id="translatedText">---</p>
+        <button id="copyTranslation" class="button small">Copy</button>
+        <button id="speakTranslation" class="button small">Speak</button>
+        <button id="stopSpeaking" class="button small">Stop</button>
+      </div>
+    </div>
+
+    <!-- Instructions -->
     <div class="instructions">
       <h2>How to Use</h2>
       <ol>
